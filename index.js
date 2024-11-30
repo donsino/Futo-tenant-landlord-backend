@@ -1,7 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
+
+// initating the routes files
 const houseRoute = require('./routes/house.route.js')
+const issuesRoutes = require('./routes/issueRoutes.js')
 const PORT = process.env.PORT || 5000;
 const app = express();
 
@@ -11,6 +14,7 @@ app.use(express.urlencoded({extended: false}));
 
 //  Routes
 app.use('/api/houses', houseRoute);
+app.use('/api/issues', issuesRoutes);
 
 //  Test API connection
 app.get('/', (req, res) =>{
