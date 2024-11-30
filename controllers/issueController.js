@@ -1,5 +1,7 @@
-const Issue = require('../routes/issueRoutes');
+const Issue = require('../models/Issue');
 
+
+// Reporting an Lodge Issue
 exports.createIssue = async (req, res) => {
   try {
     const { description } = req.body;

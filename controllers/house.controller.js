@@ -10,7 +10,7 @@ const createPost = async(req, res)=>{
     }
 }
 
-//  View all hopuses
+//  View all houses
 const getPosts = async (req, res)=>{
     try {
         const houses = await House.find({});
