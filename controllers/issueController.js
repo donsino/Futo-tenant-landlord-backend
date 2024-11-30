@@ -1,23 +1,20 @@
-const db = require('../config');
+const Issue = require('../models/Issue');
 
-const reportIssue = async (req, res) => {
-    const { user_id, issue } = req.body;
-
-    try {
-        await db.query('INSERT INTO issues (user_id, issue) VALUES (?, ?)', [user_id, issue]);
-        res.status(201).json({ message: 'Issue reported successfully' });
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
+exports.createIssue = async (req, res) => {
+  try {
+    const { description } = req.body;
+    const issue = await Issue.create({ description, user: req.user.id });
+    res.status(201).json(issue);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
 };
 
-const getIssues = async (req, res) => {
-    try {
-        const [rows] = await db.query('SELECT * FROM issues');
-        res.json(rows);
-    } catch (err) {
-        res.status(500).json({ error: err.message });
-    }
+exports.getIssues = async (req, res) => {
+  try {
+    const issues = await Issue.find().populate('user');
+    res.status(200).json(issues);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
 };
-
-module.exports = { reportIssue, getIssues };

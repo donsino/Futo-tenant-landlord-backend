@@ -1,8 +1,9 @@
 const express = require('express');
-const { reportIssue, getIssues } = require('../controllers/issueController');
+const { createIssue, getIssues } = require('../controllers/issueController');
+const authMiddleware = require('../middlewares/authMiddleware');
 const router = express.Router();
 
-router.post('/report', reportIssue);
-router.get('/', getIssues);
+router.post('/', authMiddleware, createIssue);
+router.get('/', authMiddleware, getIssues);
 
 module.exports = router;
