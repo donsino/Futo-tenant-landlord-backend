@@ -22,7 +22,7 @@ class LoginPage extends StatelessWidget {
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 16.0),
+            SizedBox(height: 17.0),
             TextField(
               controller: passwordController,
               obscureText: true,
