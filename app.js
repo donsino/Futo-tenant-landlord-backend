@@ -6,6 +6,7 @@ const connectDB = require('./config/db');
 const chatRoutes = require('./routes/chat');
 const authRoutes = require('./routes/auth');
 const listingsRoutes = require('./routes/listings');
+const issuesRoutes = require('./routes/issueRoutes.js')
 
 const app = express();
 const server = http.createServer(app); // Wrap Express app in HTTP server
@@ -37,6 +38,7 @@ app.get('/', (req, res) =>{
 app.use('/api/chats', chatRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/listings', listingsRoutes);
+app.use('/api/issues', issuesRoutes);
 
 // Socket.IO Real-Time Connections
 io.on('connection', (socket) => {
