@@ -1,0 +1,223 @@
+:root{
+    --main: #00000033;
+    --color: rgb(97, 0, 97);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: var(--main);
+    color: #000;
+}
+a{
+    color: #000;
+}
+
+/*top*/
+.top{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    background-color: var(--color);
+    padding: 5px;
+}
+.top h1{
+    margin: 10px auto;
+}
+.top h1 a{
+    color: #fff;
+}
+.top ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    font-size: 1.2rem;
+}
+.top ul li a{
+    color: #fff;
+}
+.top ul li:hover{
+    transform: scale(1.05);
+    border: solid 2px rgb(224, 224, 224);
+    border-radius: 5px;
+    padding: 3px;
+}
+.top ul li a:hover{
+    cursor: pointer;
+    color: rgb(224, 224, 224);
+}
+
+/*lodges*/
+.middle{
+    width: 80%;
+    margin: 10px auto;
+}
+.middle h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.middle div{
+    margin: auto;
+    height: 350px;
+    width: 350px;
+}
+.middle .lodges img{
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 5px rgb(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    margin: auto;
+}
+.middle div img:hover{
+    transform: scale(1.03);
+    transition: 1s;
+}
+.middle .lodges .gambia{
+    align-items: center;
+    padding: 20px;
+    width: 240px;
+    height: 290px;
+    text-align: left;
+    background-color: rgba(56, 0, 56, 0.05);
+    border: none;
+    border-radius: 20px;
+}
+.middle .lodges .gambia h3{
+    width: 100%;
+    margin: 10px auto;
+    text-align: left;
+}
+.middle .lodges .gambia p{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+.middle .lodges .gambia button{
+    padding: 5px;
+    border: solid 1px #000;
+    border-radius: 8px;
+    font-size: 1.03rem;
+    margin: 10px auto;
+    background: none;
+}
+.middle .lodges .gambia button a{
+    color: #000;
+}
+.middle .lodges .gambia button:hover{
+    transform: scale(1.05);
+    background-image: linear-gradient(to left, var(--color), black);
+    border: none;
+    transition: 2s;
+}
+.middle .lodges .gambia button a:hover{
+    color: #aeaeae;
+}
+
+/*messages*/
+.message{
+    width: 70%;
+    margin: 20px auto;
+    display: block;
+}
+.message p{
+    margin: 10px auto;
+}
+.message input{
+    margin: 10px auto;
+    height: 250px;
+    width: 250px;
+    border: none;
+    border-radius: 2px;
+    text-align: left;
+    outline: none;
+}
+.message button{
+    margin: 5px auto;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color);
+    margin-right: 170px;
+}
+.message button a{
+    color: #fff;
+}
+.message button:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+    box-shadow: 1px 1px 15px 1px;
+}
+.message button:active{
+    transform: scale(0.5);
+}
+
+/*register*/
+
+.registration{
+    margin: 10px auto;
+}
+.registration form{
+    width: 220px;
+    margin: 15px auto;
+    padding: 8px;
+    background-color: #0000002e;
+    border: none;
+    border-radius: 5px;
+}
+.registration form label{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+.registration form input{
+    outline: none;
+    text-align: left;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    height: 10px;
+}
+.registration form select{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 20px;
+    padding: 2px;
+}
+.registration button {
+    margin: 5px auto;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color);
+    margin-right: 160px;
+}
+
+.registration button a {
+    color: #fff;
+}
+
+.registration button:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+    box-shadow: 1px 1px 15px 1px;
+}
+
+.registration button:active {
+    transform: scale(0.5);
+}
