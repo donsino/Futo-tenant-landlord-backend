@@ -72,3 +72,7 @@ worked on register and issue endpoints.
 The register endpoint takes the user's name, email, password. It confirms that the email does not already exist in the database.
 The issue endpoint allows the Tenants to report or state issues like water, light and so on to Landlord of the house.
 >>>>>>> 817c487e1747820ba02a3646f98cc9a430dfb82b
+
+ EMOTONGHA OYINKURO GODSPOWER
+ worked on the application.
+ created the login page, with the user name and password
