@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+// SIgn up Page
 class SignupPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
