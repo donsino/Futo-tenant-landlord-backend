@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futo Landlord</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--top-->
+    <div class="top">
+        <h1>
+        <a href="#">Landlord-Tenant App</a>
+        </h1>
+        <ul>
+            <li><a href="#">Properties</a></li> 
+            <li><a href="#">Messages</a></li>
+            <li><a href="#registration">Register</a></li>
+        </ul>
+    </div>
+    <br>
+
+    <!--Lodges-->
+    <div class="middle">
+        <h1>Available Properties</h1>
+        <div class="lodges">
+            <div class="gambia">
+                <img src="Pictures/1733137145523.jpg" alt="">
+                <h3>1 room self-contain</h3>
+                <p>Located at Eziobodo, Futo Road.</p>
+                <br> 
+                <p>Rent: 120k/year</p>
+                <button><a href="#">Contact Landlord</a></button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Messages-->
+    <div class="message">
+        <h2>Messages</h2>
+        <p>Send a Message</p>
+        <input type="text">
+        <br>
+        <button><a href="#">Send</a></button>
+    </div>
+
+    <!--Register-->
+    <div class="registration">
+        <h2>User Registration</h2>
+        <form>
+            <label>
+                <p>Name</p>
+                <input type="text">
+            </label>
+            <label>
+                <p>Email</p>
+                <input type="email">
+            </label>
+            <label>
+                <p>Role</p>
+                <select>
+                    <option>
+                        Tenant
+                    </option>
+                    <option>
+                        Landlord
+                    </option>
+                </select>
+            </label>
+        </form>
+        <button><a href="dashboard.html">Register</a></button>
+    </div>
+</body>
+</html>
