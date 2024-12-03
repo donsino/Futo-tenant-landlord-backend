@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-Overview
+# Overview
 
 The Futo_Tenants_Landlord app is designed to facilitate communication and interaction between tenants and landlords. It provides a centralized platform for managing rental activities such as rent payments, issue reporting, and general communication.
 
----
+=======
 
-Key Features
+# Key Features
 
 1. User Authentication:
 
@@ -63,7 +62,6 @@ worked on register and issue endpoints.
 The register endpoint takes the user's name, email, password. It confirms that the email does not already exist in the database.
 The issue endpoint allows the Tenants to report or state issues like water, light and so on to Landlord of the house.
 
-> > > > > > > 817c487e1747
 
 # EMOTONGHA OYINKURO GODSPOWER
 
