@@ -44,7 +44,13 @@ Notifications for new messages, reports, or announcements.
 
 Users can update their personal details and profile pictures.
 
-As part of my role in developing the Landlord and Tenant App, I worked on creating the User Registration Page, which is a crucial feature for ensuring a smooth onboarding experience for all users. The registration page serves as the gateway for both landlords and tenants to access the platform, and I focused on making this process as intuitive and secure as possible.
+As part of my role in developing the Landlord and Tenant App, I worked on creating the User Registration Page, which is a crucial feature for ensuring a smooth onboarding experience for all users. 
+The registration page serves as the gateway for both landlords and tenants to access the platform, and I focused on making this process as intuitive and secure as possible.
+
+
+The dashboard serves as the central interface for users to access key features, monitor data, and manage activities within the app. It provides real-time insights, navigational controls, and actionable elements tailored to the user's preferences and permissions.
+
+
 
 
 =======
@@ -78,4 +84,4 @@ worked on the index page
 # Okonkwoanu Cynthia Ukamaka
 
 worked on dashboard
-MATTHEW MORRISON EMMANUEL 
+ 
